@@ -7,6 +7,7 @@ class SettingsManager: ObservableObject {
     private let apiProviderKey = "apiProvider"
 
     enum APIProvider: String, CaseIterable {
+        case google = "Google Gemini (Free)"
         case openai = "OpenAI"
         case anthropic = "Anthropic"
     }
@@ -32,7 +33,7 @@ class SettingsManager: ObservableObject {
     var hasAPIKey: Bool { !apiKey.isEmpty }
 
     private init() {
-        let raw = UserDefaults.standard.string(forKey: apiProviderKey) ?? APIProvider.openai.rawValue
-        self.apiProvider = APIProvider(rawValue: raw) ?? .openai
+        let raw = UserDefaults.standard.string(forKey: apiProviderKey) ?? APIProvider.google.rawValue
+        self.apiProvider = APIProvider(rawValue: raw) ?? .google
     }
 }

@@ -49,11 +49,73 @@ class ListingService {
         let base64Image = imageData.base64EncodedString()
 
         switch settings.apiProvider {
+        case .google:
+            return try await callGemini(prompt: prompt, base64Image: base64Image, apiKey: settings.apiKey)
         case .openai:
             return try await callOpenAI(prompt: prompt, base64Image: base64Image, apiKey: settings.apiKey)
         case .anthropic:
             return try await callAnthropic(prompt: prompt, base64Image: base64Image, apiKey: settings.apiKey)
         }
+    }
+
+    // MARK: - Google Gemini (free tier: 15 requests/min, 1M tokens/min)
+
+    private func callGemini(prompt: String, base64Image: String, apiKey: String) async throws -> ListingResponse {
+        let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=\(apiKey)")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.timeoutInterval = 60
+
+        let body: [String: Any] = [
+            "systemInstruction": [
+                "parts": [["text": prompt]]
+            ],
+            "contents": [
+                [
+                    "parts": [
+                        [
+                            "inlineData": [
+                                "mimeType": "image/jpeg",
+                                "data": base64Image
+                            ]
+                        ],
+                        [
+                            "text": "Generate a Facebook Marketplace listing for this item. Return only valid JSON."
+                        ]
+                    ]
+                ]
+            ] as [[String: Any]]
+        ]
+
+        request.httpBody = try JSONSerialization.data(withJSONObject: body)
+
+        let (data, response) = try await performRequest(request)
+
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw ServiceError.invalidResponse
+        }
+
+        if httpResponse.statusCode != 200 {
+            if let errorBody = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+               let error = errorBody["error"] as? [String: Any],
+               let message = error["message"] as? String {
+                throw ServiceError.apiError(message)
+            }
+            throw ServiceError.apiError("API returned status \(httpResponse.statusCode)")
+        }
+
+        guard let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let candidates = json["candidates"] as? [[String: Any]],
+              let first = candidates.first,
+              let content = first["content"] as? [String: Any],
+              let parts = content["parts"] as? [[String: Any]],
+              let textPart = parts.first,
+              let text = textPart["text"] as? String else {
+            throw ServiceError.invalidResponse
+        }
+
+        return try parseListingJSON(from: text)
     }
 
     // MARK: - OpenAI

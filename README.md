@@ -9,7 +9,7 @@ An iPhone app that takes a photo of anything you want to sell and uses AI to ins
 - **A Mac computer** (any Mac that can run the latest macOS)
 - **Xcode** (free app from Apple — this is what builds and runs iPhone apps)
 - **An iPhone** or you can test on a simulated iPhone on your Mac
-- **An API key** from OpenAI or Anthropic (this is how the app talks to the AI — explained below)
+- **An API key** from Google, OpenAI, or Anthropic (this is how the app talks to the AI — explained below. **Google Gemini is free!**)
 
 ---
 
@@ -82,25 +82,41 @@ Xcode needs to know who you are before it can build an app, even just for testin
 
 ## Step 6: Get an AI API Key
 
-The app needs an API key to connect to the AI that analyzes your photos. You can use either OpenAI or Anthropic (Claude). You only need one.
+The app needs an API key to connect to the AI that analyzes your photos. You only need **one** of the three options below. We recommend starting with **Google Gemini** since it's completely free.
 
-### Option A — OpenAI (GPT-4o):
+### Cost Comparison
+
+| Provider | Cost per scan | Credit card required? | Best for |
+|----------|--------------|----------------------|----------|
+| **Google Gemini** | **FREE** (up to 15 scans/min) | No | Everyone — start here |
+| **OpenAI** (GPT-4o) | ~$0.01–0.03 | Yes | Highest quality results |
+| **Anthropic** (Claude) | ~$0.01–0.03 | Yes | Great quality, alternative to OpenAI |
+
+### Option A — Google Gemini (FREE — recommended)
+1. Go to [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+2. Sign in with any **Google account** (your Gmail works)
+3. Click **Create API Key**
+4. Pick any Google Cloud project (or let it create one — doesn't matter)
+5. Copy the key
+6. That's it — **no credit card, no billing, no charges.** The free tier gives you 15 requests per minute and 1 million tokens per minute, which is way more than you'll ever need.
+
+### Option B — OpenAI (GPT-4o) — paid, ~$0.01/scan
 1. Go to [https://platform.openai.com/signup](https://platform.openai.com/signup) and create an account
 2. Go to [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 3. Click **Create new secret key**
 4. Copy the key (it starts with `sk-`)
-5. You will need to add a payment method and load a small balance (even $5 is plenty for hundreds of scans)
+5. You'll need to add a payment method and load a small balance ($5 gets you roughly 200–500 scans)
 
-### Option B — Anthropic (Claude):
+### Option C — Anthropic (Claude) — paid, ~$0.01/scan
 1. Go to [https://console.anthropic.com/](https://console.anthropic.com/) and create an account
 2. Go to [https://console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys)
 3. Click **Create Key**
 4. Copy the key (it starts with `sk-ant-`)
-5. You will need to add a payment method and load a small balance
+5. You'll need to add a payment method and load a small balance ($5 gets you roughly 200–500 scans)
 
 ### Enter your key in the app:
 1. Open the app and tap the **Settings** tab (gear icon)
-2. Choose your **Provider** (OpenAI or Anthropic)
+2. Choose your **Provider** (Google Gemini, OpenAI, or Anthropic)
 3. Paste your API key into the **API Key** field
 4. You'll see a green checkmark confirming it's saved
 
@@ -128,7 +144,7 @@ The app needs an API key to connect to the AI that analyzes your photos. You can
 ## Frequently Asked Questions
 
 **Is this app free?**
-The app itself is completely free and open source. The only cost is the API usage — each scan costs a fraction of a cent (roughly $0.01–0.03 per photo analyzed).
+Yes! The app is free and open source, and if you use **Google Gemini** as your AI provider, the API is free too. OpenAI and Anthropic charge a tiny amount per scan (~$0.01–0.03) but Gemini costs nothing.
 
 **Does it work without an API key?**
 No. The app needs an API key to send your photo to the AI. Without one, the Generate button will prompt you to add a key in Settings.
