@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0000000000000000000001 /* MarketplaceAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* MarketplaceAssistantApp.swift */; };
+		BB0000000000000000000002 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000002 /* Theme.swift */; };
+		BB0000000000000000000003 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000003 /* Listing.swift */; };
+		BB0000000000000000000004 /* ListingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000004 /* ListingCategory.swift */; };
+		BB0000000000000000000005 /* ListingStyleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000005 /* ListingStyleOptions.swift */; };
+		BB0000000000000000000006 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000006 /* KeychainHelper.swift */; };
+		BB0000000000000000000007 /* ScanLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000007 /* ScanLimiter.swift */; };
+		BB0000000000000000000008 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000008 /* SettingsManager.swift */; };
+		BB0000000000000000000009 /* ListingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000009 /* ListingStore.swift */; };
+		BB000000000000000000000A /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000A /* ListingService.swift */; };
+		BB000000000000000000000B /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000B /* ScanViewModel.swift */; };
+		BB000000000000000000000C /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000C /* ItemDetailViewModel.swift */; };
+		BB000000000000000000000D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000D /* ContentView.swift */; };
+		BB000000000000000000000E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000E /* ScanView.swift */; };
+		BB000000000000000000000F /* ScanCounterBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000F /* ScanCounterBadge.swift */; };
+		BB0000000000000000000010 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* CategoryPickerView.swift */; };
+		BB0000000000000000000011 /* ListingStyleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000011 /* ListingStyleSection.swift */; };
+		BB0000000000000000000012 /* PhotoAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000012 /* PhotoAreaView.swift */; };
+		BB0000000000000000000013 /* ResultCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000013 /* ResultCardView.swift */; };
+		BB0000000000000000000014 /* SavedListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000014 /* SavedListingsView.swift */; };
+		BB0000000000000000000015 /* SavedListingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* SavedListingRow.swift */; };
+		BB0000000000000000000016 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000016 /* ItemDetailView.swift */; };
+		BB0000000000000000000017 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000017 /* SettingsView.swift */; };
+		BB0000000000000000000018 /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000018 /* PillButton.swift */; };
+		BB0000000000000000000019 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000019 /* ToastView.swift */; };
+		BB000000000000000000001A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001A /* CameraView.swift */; };
+		BB000000000000000000001B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000001 /* MarketplaceAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceAssistantApp.swift; sourceTree = "<group>"; };
+		AA0000000000000000000002 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AA0000000000000000000003 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		AA0000000000000000000004 /* ListingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCategory.swift; sourceTree = "<group>"; };
+		AA0000000000000000000005 /* ListingStyleOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingStyleOptions.swift; sourceTree = "<group>"; };
+		AA0000000000000000000006 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		AA0000000000000000000007 /* ScanLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLimiter.swift; sourceTree = "<group>"; };
+		AA0000000000000000000008 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		AA0000000000000000000009 /* ListingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingStore.swift; sourceTree = "<group>"; };
+		AA000000000000000000000A /* ListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingService.swift; sourceTree = "<group>"; };
+		AA000000000000000000000B /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		AA000000000000000000000C /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		AA000000000000000000000D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000000000000000000000E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		AA000000000000000000000F /* ScanCounterBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCounterBadge.swift; sourceTree = "<group>"; };
+		AA0000000000000000000010 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000011 /* ListingStyleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingStyleSection.swift; sourceTree = "<group>"; };
+		AA0000000000000000000012 /* PhotoAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAreaView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000013 /* ResultCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCardView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000014 /* SavedListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListingsView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000015 /* SavedListingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListingRow.swift; sourceTree = "<group>"; };
+		AA0000000000000000000016 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000017 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000018 /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
+		AA0000000000000000000019 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA000000000000000000001D /* MarketplaceAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketplaceAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD0000000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC000000000000000000000D /* root */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000000000000000000001 /* MarketplaceAssistant */,
+				CC000000000000000000000C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000001 /* MarketplaceAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000000000000000000002 /* App */,
+				CC0000000000000000000003 /* Models */,
+				CC0000000000000000000004 /* Services */,
+				CC0000000000000000000005 /* ViewModels */,
+				CC0000000000000000000006 /* Views */,
+				AA000000000000000000001B /* Assets.xcassets */,
+			);
+			path = MarketplaceAssistant;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000001 /* MarketplaceAssistantApp.swift */,
+				AA0000000000000000000002 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000003 /* Listing.swift */,
+				AA0000000000000000000004 /* ListingCategory.swift */,
+				AA0000000000000000000005 /* ListingStyleOptions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000006 /* KeychainHelper.swift */,
+				AA0000000000000000000007 /* ScanLimiter.swift */,
+				AA0000000000000000000008 /* SettingsManager.swift */,
+				AA0000000000000000000009 /* ListingStore.swift */,
+				AA000000000000000000000A /* ListingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000B /* ScanViewModel.swift */,
+				AA000000000000000000000C /* ItemDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000D /* ContentView.swift */,
+				CC0000000000000000000007 /* Scan */,
+				CC0000000000000000000008 /* Saved */,
+				CC0000000000000000000009 /* ItemDetail */,
+				CC000000000000000000000A /* Settings */,
+				CC000000000000000000000B /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000007 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000E /* ScanView.swift */,
+				AA000000000000000000000F /* ScanCounterBadge.swift */,
+				AA0000000000000000000010 /* CategoryPickerView.swift */,
+				AA0000000000000000000011 /* ListingStyleSection.swift */,
+				AA0000000000000000000012 /* PhotoAreaView.swift */,
+				AA0000000000000000000013 /* ResultCardView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000008 /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000014 /* SavedListingsView.swift */,
+				AA0000000000000000000015 /* SavedListingRow.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		CC0000000000000000000009 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000016 /* ItemDetailView.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		CC000000000000000000000A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000017 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CC000000000000000000000B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000018 /* PillButton.swift */,
+				AA0000000000000000000019 /* ToastView.swift */,
+				AA000000000000000000001A /* CameraView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC000000000000000000000C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000001D /* MarketplaceAssistant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD0000000000000000000001 /* MarketplaceAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD0000000000000000000009 /* Build configuration list for PBXNativeTarget "MarketplaceAssistant" */;
+			buildPhases = (
+				DD0000000000000000000002 /* Sources */,
+				DD0000000000000000000004 /* Frameworks */,
+				DD0000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketplaceAssistant;
+			productName = MarketplaceAssistant;
+			productReference = AA000000000000000000001D /* MarketplaceAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD0000000000000000000005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DD0000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = DD0000000000000000000006 /* Build configuration list for PBXProject "OpenSourceMarketplaceAssistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC000000000000000000000D /* root */;
+			productRefGroup = CC000000000000000000000C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD0000000000000000000001 /* MarketplaceAssistant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD0000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB000000000000000000001B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD0000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0000000000000000000001 /* MarketplaceAssistantApp.swift in Sources */,
+				BB0000000000000000000002 /* Theme.swift in Sources */,
+				BB0000000000000000000003 /* Listing.swift in Sources */,
+				BB0000000000000000000004 /* ListingCategory.swift in Sources */,
+				BB0000000000000000000005 /* ListingStyleOptions.swift in Sources */,
+				BB0000000000000000000006 /* KeychainHelper.swift in Sources */,
+				BB0000000000000000000007 /* ScanLimiter.swift in Sources */,
+				BB0000000000000000000008 /* SettingsManager.swift in Sources */,
+				BB0000000000000000000009 /* ListingStore.swift in Sources */,
+				BB000000000000000000000A /* ListingService.swift in Sources */,
+				BB000000000000000000000B /* ScanViewModel.swift in Sources */,
+				BB000000000000000000000C /* ItemDetailViewModel.swift in Sources */,
+				BB000000000000000000000D /* ContentView.swift in Sources */,
+				BB000000000000000000000E /* ScanView.swift in Sources */,
+				BB000000000000000000000F /* ScanCounterBadge.swift in Sources */,
+				BB0000000000000000000010 /* CategoryPickerView.swift in Sources */,
+				BB0000000000000000000011 /* ListingStyleSection.swift in Sources */,
+				BB0000000000000000000012 /* PhotoAreaView.swift in Sources */,
+				BB0000000000000000000013 /* ResultCardView.swift in Sources */,
+				BB0000000000000000000014 /* SavedListingsView.swift in Sources */,
+				BB0000000000000000000015 /* SavedListingRow.swift in Sources */,
+				BB0000000000000000000016 /* ItemDetailView.swift in Sources */,
+				BB0000000000000000000017 /* SettingsView.swift in Sources */,
+				BB0000000000000000000018 /* PillButton.swift in Sources */,
+				BB0000000000000000000019 /* ToastView.swift in Sources */,
+				BB000000000000000000001A /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DD0000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD0000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD000000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Marketplace Assistant";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to photograph items for marketplace listings.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app accesses your photo library to select item photos for marketplace listings.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marketplace.assistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD000000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Marketplace Assistant";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to photograph items for marketplace listings.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app accesses your photo library to select item photos for marketplace listings.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marketplace.assistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD0000000000000000000006 /* Build configuration list for PBXProject "OpenSourceMarketplaceAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD0000000000000000000007 /* Debug */,
+				DD0000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD0000000000000000000009 /* Build configuration list for PBXNativeTarget "MarketplaceAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD000000000000000000000A /* Debug */,
+				DD000000000000000000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD0000000000000000000005 /* Project object */;
+}
